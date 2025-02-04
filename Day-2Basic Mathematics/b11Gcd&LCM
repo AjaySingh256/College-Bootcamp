@@ -1,0 +1,18 @@
+#include<stdio.h>
+int gcd(int a, int b){
+   while(b!=0){
+    int temp = b;
+    b = a%b;
+    a=temp;
+   } 
+   return a;
+}
+   int main(){
+    int a,b,GCD,LCM;
+    printf("Enter the two number:");
+    scanf("%d %d",&a,&b);
+    GCD=gcd(a,b);
+    LCM = (a*b)/GCD;
+    printf("GCD  %d\n",GCD);
+    printf("LCM  %d\n",LCM);
+   }
