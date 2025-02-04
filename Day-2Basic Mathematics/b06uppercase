@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int choice;
+    float v;
+    printf("select :\n1 cm to m\n2. kg to g\n");
+    scanf("%d",&choice);
+    printf("Enter the value:");
+    scanf("%f",&v);
+    if(choice==1)
+    printf("%.2fcm= %.2fm\n",v,v/100);
+     else if(choice==2)
+    printf("%.2fg= %.2fkg\n",v,v/1000);
+    else
+     printf("invlaid choice\n");
+}
